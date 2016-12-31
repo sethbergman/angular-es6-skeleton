@@ -70,7 +70,7 @@
     "clean": "npm cache clean && rimraf -- node_modules coverage dist",
     "build:dev": "export NODE_ENV=prod && webpack -p",
     "lint": "eslint src/ || true",
-    "start": "http-server",
+    "start": "node server.js",
     "start:dev": "webpack-dev-server --inline --port 5000 --content-base dist/",
     "start:prod": "node server.js --content-base dist/",
     "build": "NODE_ENV=production node node_modules/.bin/webpack && cp src/index.html dist/index.html",
