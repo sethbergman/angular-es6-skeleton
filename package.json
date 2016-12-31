@@ -2,10 +2,13 @@
   "name": "angular-es6-skeleton",
   "version": "1.0.0",
   "description": "A basic Angular 1.5 app skeleton using ES6 and Webpack",
-  "main": "app.js",
+  "main": "server.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/sethbergman/angular-es6-skeleton.git"
+  },
+  "engines": {
+    "node": "5.11.1"
   },
   "homepage": "https://github.com/sethbergman/angular-es6-skeleton",
   "bugs": "https://github.com/sethbergman/angular-es6-skeleton/issues",
