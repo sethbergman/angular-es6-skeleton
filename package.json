@@ -67,7 +67,7 @@
   },
   "scripts": {
     "clean": "npm cache clean && rimraf -- node_modules coverage dist",
-    "build": "export NODE_ENV=prod && webpack -p",
+    "postinstall": "export NODE_ENV=prod && webpack -p",
     "lint": "eslint src/ || true",
     "start:dev": "webpack-dev-server --inline --port 5000 --content-base dist/",
     "start": "node server.js --content-base dist/",
