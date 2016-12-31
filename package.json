@@ -67,10 +67,10 @@
   },
   "scripts": {
     "clean": "npm cache clean && rimraf -- node_modules coverage dist",
-    "postinstall": "webpack -p",
+    "build": "export NODE_ENV=prod && webpack -p",
     "lint": "eslint src/ || true",
     "start:dev": "webpack-dev-server --inline --port 5000 --content-base dist/",
-    "start": "webpack && node server.js",
+    "start": "node server.js --content-base dist/",
     "test:unit": "karma start",
     "test:unit-watch": "karma start karma.conf.js --auto-watch=true --single-run=False",
     "test:e2e-server": "./node_modules/protractor/bin/webdriver-manager update && ./node_modules/protractor/bin/webdriver-manager start",
