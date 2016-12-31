@@ -10,7 +10,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'ng-es6-skeleton',
+      title: 'angular-es6-skeleton',
       template: 'src/index.html',
       minify: {
         collapseWhitespace: true,
