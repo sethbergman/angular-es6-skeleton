@@ -1,1 +1,1 @@
-web: npm start
+FROM iteamdev/node-webpack
