@@ -12,7 +12,7 @@ const webpack = require('webpack');
 var config = {
   entry: './src/app.js',
   output: {
-    path: '/dist',
+    path: __dirname + '/dist',
     filename: 'bundle.js'
   },
 
