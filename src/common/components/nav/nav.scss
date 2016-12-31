@@ -1,0 +1,42 @@
+@import '../../styles/layout.scss';
+@import '../../styles/colors.scss';
+
+$navBackgroundColor: $grayDarkColor;
+$navItemActiveBackgroundColor: $grayColorMedium;
+$navItemHoverBackgroundColor: $grayColor;
+
+nav {
+  @include span(1 inside);
+
+  background-color: $navBackgroundColor;
+  padding: 20px;
+  min-height: 400px;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav > ul > li {
+  margin-bottom: 30px;
+  padding: 10px;
+  position: relative;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    background-color: $navItemHoverBackgroundColor;
+  }
+
+  &.active {
+    background-color: $navItemActiveBackgroundColor;
+  }
+
+  a {
+    display: block;
+  }
+}

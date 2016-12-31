@@ -1,0 +1,60 @@
+@import './colors.scss';
+
+$formInputColor: $grayDarkColor;
+$inputBorderColor: $grayColor;
+$buttonBackgroundColor: $whiteColor;
+$buttonColor: $grayDarkColor;
+
+input[type=text] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid $inputBorderColor;
+  color: $formInputColor;
+  height: 100%;
+}
+
+form {
+  width: 50%;
+
+  button {
+    background: $buttonBackgroundColor;
+    border: 0;
+    color: $buttonColor;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 10px;
+
+    &:hover {
+      background-color: darken($buttonBackgroundColor, 10%);
+    }
+
+    &:active {
+      background-color: darken($buttonBackgroundColor, 20%);
+    }
+  }
+}
+
+.form-row {
+  margin-bottom: 10px;
+
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  label {
+    @include span(4);
+
+    padding-top: 10px;
+    text-align: right;
+  }
+
+  input {
+    @include span(8 last);
+  }
+
+  button {
+    @include push(4);
+  }
+}

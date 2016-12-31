@@ -1,0 +1,33 @@
+@import '../../styles/colors.scss';
+@import '../../styles/layout.scss';
+
+$headerBackgroundColor: $tealColor;
+
+header {
+  @include span(full inside no-gutters);
+
+  background-color: $headerBackgroundColor;
+  padding: 20px;
+}
+
+.header-wrapper {
+  display: flex;
+
+  .form-field {
+    position:relative;
+
+    &--search {
+      margin-left: auto;
+
+      input {
+        padding-right: 50px;
+      }
+    }
+
+    &--search__icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+}

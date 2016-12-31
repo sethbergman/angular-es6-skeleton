@@ -1,0 +1,27 @@
+@import './colors.scss';
+
+$tableBackgroundColor: $whiteColor;
+$tableBorderColor: $grayLightColor;
+
+table {
+  background-color: $tableBackgroundColor;
+  width: 100%;
+}
+
+thead th {
+  border-bottom: 1px solid $tableBorderColor;
+  padding: 10px;
+  text-align: left;
+}
+
+tbody tr {
+  td {
+    border-bottom: 1px solid $tableBorderColor;
+    padding: 10px;
+    text-align: left;
+  }
+
+  &:last-child td {
+    border-bottom: none;
+  }
+}

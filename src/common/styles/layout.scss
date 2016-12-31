@@ -1,0 +1,13 @@
+@import '~susy/sass/susy';
+
+$susy: (
+  columns: 12,
+  gutters: .25,
+  global-box-sizing: border-box
+  // debug: (
+  //   image: show,
+  //   color: rgba(#66b3dc, 0.25),
+  //   output: background,
+  //   toggle: top right
+  // )
+);

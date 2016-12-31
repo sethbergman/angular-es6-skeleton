@@ -1,0 +1,85 @@
+@import 'common/styles/layout.scss';
+
+@import 'common/styles/alert.scss';
+@import 'common/styles/colors.scss';
+@import 'common/styles/forms.scss';
+@import 'common/styles/tables.scss';
+@import 'common/styles/typography.scss';
+
+$bodyBackgroundColor: $whiteColor;
+$mainBackgroundColor: $grayLightColor;
+
+// Reset / Defaults
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  @include container;
+
+  margin: 0;
+  padding: 0;
+  background-color: $bodyBackgroundColor;
+  font-family: helvetica, arial, san-serif;
+}
+
+li {
+  list-style: none;
+}
+
+
+// Content
+
+main {
+  @include span(11 inside);
+
+  background-color: $mainBackgroundColor;
+  min-height: 400px;
+  padding: 20px;
+}
+
+// 500 to target iPhone 6, Galaxy Nexus, small tablets, etc
+@media (max-width: 500px) {
+  main {
+    padding: 40px;
+  }
+}
+
+svg.icon {
+  width: 100%;
+  max-width: 40px;
+  max-height: 40px;
+  margin: 0 auto;
+  display: block;
+}
+
+
+// Angular-specific CSS / Loader
+
+[ng-cloak] {
+  display: none !important;
+}
+
+.loader {
+  border: 16px solid $grayColor;
+  border-top: 16px solid $grayDarkColor;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin: 20% auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

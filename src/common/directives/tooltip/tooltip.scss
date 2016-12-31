@@ -1,0 +1,27 @@
+@import '../../styles/colors.scss';
+
+.tooltip {
+  display: inline;
+  position: absolute;
+  padding: 10px;
+  background-color: $blackColor;
+  color: $whiteColor;
+  left: calc(100% + 10px);
+  top: 25%;
+  width: auto;
+  min-width: 100px;
+  text-align: center;
+  border-radius: 5px;
+
+  &:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid $blackColor;
+    left: -8px;
+  }
+}

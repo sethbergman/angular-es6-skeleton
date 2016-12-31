@@ -1,0 +1,9 @@
+<ul>
+  <li ui-sref-active="active" ng-repeat="link in $ctrl.links">
+    <a ui-sref="{{link.sref}}" tooltip="{{link.tooltip}}">
+      <svg class="icon">
+        <use xlink:href="{{link.icon | svgLink}}"></use>
+      </svg>
+    </a>
+  </li>
+</ul>

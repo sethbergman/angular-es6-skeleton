@@ -1,0 +1,14 @@
+@import '../../styles/layout.scss';
+@import '../../styles/colors.scss';
+
+$footerBackgroundColor: $whiteColor;
+$footerTextColor: $grayColor;
+
+footer {
+  @include span(full inside no-gutters);
+
+  background-color: $footerBackgroundColor;
+  color: $footerTextColor;
+  padding: 20px;
+  text-align: center;
+}

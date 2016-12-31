@@ -1,0 +1,17 @@
+@import './colors.scss';
+
+$infoBackgroundColor: $babyBlueColor;
+
+.alert {
+  padding: 10px;
+  padding: .75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+}
+
+.alert--info {
+  background-color: $infoBackgroundColor;
+  border-color: darken($infoBackgroundColor, 5%);
+  color: darken($infoBackgroundColor, 50%);
+}

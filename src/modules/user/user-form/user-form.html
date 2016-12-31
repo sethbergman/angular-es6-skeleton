@@ -1,0 +1,35 @@
+<form ng-submit="$ctrl.submitFormHandler($event, {user: $ctrl.user})">
+  <div ng-show="$ctrl.message" class="alert alert--info">
+    {{$ctrl.message}}
+  </div>
+  <div class="form-row">
+    <label>First Name</label>
+    <input
+      type="text"
+      required
+      ng-model="$ctrl.user.firstName"
+      ng-required="true"
+    >
+  </div>
+  <div class="form-row">
+    <label>Last Name</label>
+    <input
+      type="text"
+      required
+      ng-model="$ctrl.user.lastName"
+      ng-requires="true"
+    >
+  </div>
+  <div class="form-row">
+    <label>Email</label>
+    <input
+      type="text"
+      required
+      ng-model="$ctrl.user.email"
+      ng-required="true"
+    >
+  </div>
+  <div class="form-row">
+    <button type="submit">Add User</button>
+  </div>
+</form>

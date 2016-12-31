@@ -1,0 +1,68 @@
+{
+  "extends": [
+    "airbnb-base",
+    "angular"
+  ],
+  "plugins": [
+    "angular",
+    "import"
+  ],
+  "settings" : {
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack.config.js"
+      }
+    }
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "rules": {
+    "indent": [
+      2,
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "quotes": [
+      2,
+      "single"
+    ],
+    "linebreak-style": [
+      2,
+      "unix"
+    ],
+    "semi": [
+      2,
+      "always"
+    ],
+    "angular/di": [
+      2,
+      "$inject"
+    ],
+    "no-param-reassign": 0,
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "jasmine": true,
+    "mocha": true,
+    "amd": true
+  },
+  "ecmaFeatures": {
+    "modules": true
+  },
+  "globals": {
+    "chai": false,
+    "describe": false,
+    "it": false,
+    "before": false,
+    "beforeEach": false,
+    "after": false,
+    "afterEach": false,
+    "inject": false
+  }
+}

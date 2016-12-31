@@ -1,0 +1,36 @@
+@import 'colors.scss';
+
+@mixin largeFont {
+  font-size: 1.4rem;
+  font-family: helvetica, arial, sans-serif;
+}
+
+@mixin mediumFont {
+  font-size: 1rem;
+  font-family: helvetica, arial, sans-serif;
+}
+
+@mixin smallFont {
+  font-size: 0.75rem;
+  font-family: helvetica, arial, sans-serif;
+}
+
+h1 {
+  @include largeFont;
+
+  color: $grayDarkColor;
+  align-self: flex-start;
+  font-weight: normal;
+}
+
+p {
+  @include mediumFont;
+
+  color: $grayDarkColor;
+}
+
+.caption {
+  @include smallFont;
+
+  color: $grayColor;
+}
