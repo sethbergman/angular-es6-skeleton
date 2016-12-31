@@ -10,10 +10,9 @@
 const webpack = require('webpack');
 
 var config = {
-  context: __dirname + './src',
-  entry: './app.js',
+  entry: './src/app.js',
   output: {
-    path: __dirname + './src',
+    path: '/dist',
     filename: 'bundle.js'
   },
 
