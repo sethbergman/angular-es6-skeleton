@@ -67,7 +67,8 @@
     "webpack": "~1.12.14",
     "webpack-dev-server": "^1.16.2",
     "webpack-md5-hash": "0.0.5",
-    "webpack-merge": "~0.14.0"
+    "webpack-merge": "~0.14.0",
+    "snyk": "^1.41.1"
   },
   "scripts": {
     "clean": "npm cache clean && rimraf -- node_modules coverage dist",
@@ -80,6 +81,9 @@
     "test:unit": "karma start",
     "test:unit-watch": "karma start karma.conf.js --auto-watch=true --single-run=False",
     "test:e2e-server": "./node_modules/protractor/bin/webdriver-manager update && ./node_modules/protractor/bin/webdriver-manager start",
-    "test:e2e": "protractor e2e_tests/protractor.config.js --baseUrl='http://0.0.0.0:5000'"
-  }
+    "test:e2e": "protractor e2e_tests/protractor.config.js --baseUrl='http://0.0.0.0:5000'",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
