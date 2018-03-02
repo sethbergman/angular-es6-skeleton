@@ -52,7 +52,7 @@
     "karma-mocha": "1.1.1",
     "karma-mocha-reporter": "2.1.0",
     "karma-sourcemap-loader": "0.3.7",
-    "karma-webpack": "1.8.0",
+    "karma-webpack": "2.0.10",
     "mocha": "~2.3.0",
     "ng-annotate-loader": "^0.2.0",
     "node-sass": "~3.3.3",
@@ -64,7 +64,7 @@
     "style-loader": "~0.13.0",
     "susy": "^2.2.12",
     "url-loader": "~0.5.6",
-    "webpack": "~1.12.14",
+    "webpack": "~2.2.0",
     "webpack-dev-server": "^1.16.2",
     "webpack-md5-hash": "0.0.5",
     "webpack-merge": "~0.14.0"
