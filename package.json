@@ -65,7 +65,7 @@
     "susy": "^2.2.12",
     "url-loader": "~0.5.6",
     "webpack": "~1.12.14",
-    "webpack-dev-server": "^1.16.2",
+    "webpack-dev-server": "^3.1.2",
     "webpack-md5-hash": "0.0.5",
     "webpack-merge": "~0.14.0"
   },
